@@ -141,7 +141,7 @@ Example snippet of a CAPI2 description file for Slang:
         self._get_run_mode_flags()
         self._get_top_flags()
         try:
-            self._run_tool("slang", self.flags, quiet=True)
+            self._run_tool("slang", self.flags)
         except RuntimeError:
             # Don't raise with the full command line args - it polutes the terminal
             raise RuntimeError("Slang lint check failed")
