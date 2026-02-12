@@ -28,7 +28,7 @@ XRUN_CALL = $(XRUN) -hal -sv -q -f edalize_main.f $(EXTRA_OPTIONS) -top $(TOPLEV
 all:
 
 run:
-    $(XRUN_CALL)
+\t$(XRUN_CALL)
 
 clean:
 """
